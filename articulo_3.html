@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>La Kitchen – Café y Apuntes</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <button id="btn-volver-arriba" title="Volver arriba">↑</button>
+  <script>
+    const btnVolverArriba = document.getElementById("btn-volver-arriba");
+    window.addEventListener("scroll", () => {
+      btnVolverArriba.style.display = window.scrollY > 300 ? "block" : "none";
+    });
+    btnVolverArriba.addEventListener("click", () => {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+  </script>
+
+  <header>
+    <h1>Café y Apuntes</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="articulos.html">Artículos</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+        <li><a href="https://clugo21.github.io/linktree/" target="_blank">Linktree</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="articulo-individual">
+    <div class="titulo-con-volver">
+      <a href="articulos.html" class="volver-sutil">← Volver</a>
+      <h2>La Kitchen</h2>
+    </div>
+
+    <div class="bloque-articulo">
+      <img src="imagenes/lakitchen2.jpg" alt="Interior de La Kitchen café">
+
+      <p><a href="https://www.instagram.com/lakitchen.ba/" target="_blank"><strong>La Kitchen</strong></a> cuenta con dos sedes: una en Núñez y otra en Villa Ortúzar.</p>
+
+      <p>Ambas tienen mucho espacio interior, con mesas grandes y luz natural. Puede ser algo ruidoso los fines de semana por la cantidad de gente, pero durante la semana es excelente para descontracturar del estudio o trabajo.</p>
+
+      <p>Lo mejor: las medialunas (¡de las mejores que probé!) y el fosforito de jamón y queso que no falla nunca.</p>
+
+      <p>Si querés conocer un poco más sobre La Kitchen, te dejo este video de <strong>Ramitagram</strong> donde cuenta su experiencia, muestra el lugar y comparte su opinión:</p>
+
+      <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/uiJ6omtmOrs?si=Rh--3qkv-BGhOYTu" title="YouTube video player" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+
+      <time datetime="2025-06-03" class="fecha-articulo">Publicado el 3 de junio de 2025</time>
+    </div>
+
+    <div class="navegacion-articulos">
+      <a href="articulo_2.html">← Artículo anterior</a>
+      <span style="font-size: 1rem; color: #5d4037; font-weight: bold;">3</span>
+      <a href="articulo_4.html">Artículo siguiente →</a>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Café y Apuntes – creado por Camila Lugones</p>
+  </footer>
+</body>
+</html>

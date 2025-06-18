@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Café y Apuntes – por Camila Lugones</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <button id="btn-volver-arriba" title="Volver arriba">↑</button>
+  <script>
+    const btnVolverArriba = document.getElementById("btn-volver-arriba");
+
+    window.addEventListener("scroll", () => {
+      btnVolverArriba.style.display = window.scrollY > 300 ? "block" : "none";
+    });
+
+    btnVolverArriba.addEventListener("click", () => {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+  </script>
+
+  <header>
+    <h1>Café y Apuntes</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="articulos.html">Artículos</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+        <li><a href="https://clugo21.github.io/linktree/" target="_blank">Linktree</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h2>Bienvenidos a mi blog</h2>
+      <img src="imagenes/portada.jpg" alt="Taza de café con apuntes" class="hero-img">
+      <p>Acá comparto mis cafés favoritos para estudiar, playlists para concentrarte y lugares que inspiran foco y tranquilidad.</p>
+    </section>
+
+    <section class="presentacion">
+      <p>
+        Hoy en día, muchos de nosotros estudiamos y trabajamos desde casa, siempre desde el mismo ambiente y el mismo escritorio. Por eso, quise armar este espacio para compartir mis cafés preferidos para estudiar: lugares tranquilos donde sea fácil concentrarse, cambiar de aire y salir un poco de la rutina diaria.
+      </p>
+      <p>
+        Además, sumé algunos artículos y playlists que fui encontrando en el camino, que me ayudan a mantener el foco o simplemente disfrutar más del momento. ¡Ojalá te sirvan tanto como a mí!
+      </p>
+    </section>
+
+    <section class="articulos">
+
+      <article>
+        <h2>La Noire Café</h2>
+        <img src="imagenes/lanoire2.jpg" alt="Interior de La Noire Café">
+        <p>Ambiente cálido, café de especialidad y un patio interno de mucha paz. Ideal para tardes largas de estudio con buena iluminación y calma.</p>
+        <div class="meta right">
+          <time datetime="2025-06-01">1 de junio de 2025</time>
+          <a href="articulo_1.html" class="leer-mas">Leer más →</a>
+        </div>
+      </article>
+
+      <article>
+        <h2>SOSA Café</h2>
+        <img src="imagenes/sosa.jpg" alt="Exterior de SOSA Café">
+        <p>Espacio moderno con mesas amplias, tranquilidad y atención excelente. Cada plato te va a tentar.</p>
+        <div class="meta right">
+          <time datetime="2025-06-02">2 de junio de 2025</time>
+          <a href="articulo_2.html" class="leer-mas">Leer más →</a>
+        </div>
+      </article>
+
+      <article>
+        <h2>La Kitchen</h2>
+        <img src="imagenes/lakitchen2.jpg" alt="Interior de La Kitchen café">
+        <p>Ya sea en Villa Ortúzar o en Núñez, este café tiene ese aire canchero, buena música y café perfecto para acompañar tus apuntes.</p>
+        <div class="meta right">
+          <time datetime="2025-06-03">3 de junio de 2025</time>
+          <a href="articulo_3.html" class="leer-mas">Leer más →</a>
+        </div>
+      </article>
+
+      <article>
+        <h2>Playlist para estudiar🎧</h2>
+        <img src="imagenes/playlist.jpg" alt="Playlist de jazz para estudiar">
+        <p>Una playlist que uso cuando necesito máxima concentración. Jazz instrumental, sin letras, suave y envolvente.</p>
+        <div class="meta right">
+          <time datetime="2025-06-04">4 de junio de 2025</time>
+          <a href="articulo_4.html" class="leer-mas">Leer más →</a>
+        </div>
+      </article>
+
+      <article>
+        <h2>Cafés para estudiar en Buenos Aires</h2>
+        <img src="imagenes/articulo.jpg" alt="Cafeterías recomendadas para estudiar">
+        <p>Encontré esta nota que recopila algunos de los mejores lugares para trabajar o estudiar en la ciudad. Vale la pena guardarla y recorrerlos.</p>
+        <div class="meta right">
+          <time datetime="2025-06-05">5 de junio de 2025</time>
+          <a href="articulo_5.html" class="leer-mas">Leer más →</a>
+        </div>
+      </article>
+
+    </section>
+
+    <section id="contacto">
+      <h2>Contacto</h2>
+      <form action="https://formspree.io/f/movwjobr" method="POST">
+        <input type="hidden" name="_subject" value="Nuevo mensaje desde Café y Apuntes">
+        <input type="hidden" name="_redirect" value="https://tuusuario.github.io/gracias.html">
+
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Café y Apuntes – creado por Camila Lugones</p>
+  </footer>
+
+</body>
+</html>

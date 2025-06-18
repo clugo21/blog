@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Café y Apuntes – Artículos</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <button id="btn-volver-arriba" title="Volver arriba">↑</button>
+  <script>
+  const btnVolverArriba = document.getElementById("btn-volver-arriba");
+
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 300) {
+      btnVolverArriba.style.display = "block";
+    } else {
+      btnVolverArriba.style.display = "none";
+    }
+  });
+
+  btnVolverArriba.addEventListener("click", () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  });
+</script>
+
+  <header>
+    <h1>Café y Apuntes</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="articulos.html">Artículos</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+        <li><a href="https://clugo21.github.io/linktree/" target="_blank">Linktree</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="articulos">
+
+      <article>
+        <h2>La Noire Café</h2>
+        <img src="imagenes/lanoire2.jpg" alt="Interior de La Noire Café">
+        <p>Ambiente cálido, café de especialidad y un patio interno de mucha paz. Ideal para tardes largas de estudio con buena iluminación y calma.</p>
+        <div class="meta right">
+          <time datetime="2025-06-01">1 de junio de 2025</time>
+          <a href="articulo_1.html" class="leer-mas">Leer más →</a>
+        </div>
+      </article>
+
+      <article>
+        <h2>SOSA Café</h2>
+        <img src="imagenes/sosa.jpg" alt="Exterior de SOSA Café">
+        <p>Espacio moderno con mesas amplias, tranquilidad y atención excelente. Cada plato te va a tentar.</p>
+        <div class="meta right">
+          <time datetime="2025-06-02">2 de junio de 2025</time>
+          <a href="articulo_2.html" class="leer-mas">Leer más →</a>
+        </div>
+      </article>
+
+      <article>
+        <h2>La Kitchen</h2>
+        <img src="imagenes/lakitchen2.jpg" alt="Interior de La Kitchen café">
+        <p>Ya sea en Villa Ortúzar o en Núñez, este café tiene ese aire canchero, buena música y café perfecto para acompañar tus apuntes.</p>
+        <div class="meta right">
+          <time datetime="2025-06-03">3 de junio de 2025</time>
+          <a href="articulo_3.html" class="leer-mas">Leer más →</a>
+        </div>
+      </article>
+
+      <article>
+        <h2>Playlist para estudiar</h2>
+        <img src="imagenes/playlist.jpg" alt="Playlist de jazz para estudiar">
+        <p>Una playlist que uso cuando necesito máxima concentración. Jazz instrumental, sin letras, suave y envolvente.</p>
+        <div class="meta right">
+          <time datetime="2025-06-04">4 de junio de 2025</time>
+          <a href="articulo_4.html" class="leer-mas">Leer más →</a>
+        </div>
+      </article>
+
+      <article>
+        <h2>Artículo: Cafés para estudiar en Buenos Aires</h2>
+        <img src="imagenes/articulo.jpg" alt="Cafeterías recomendadas para estudiar">
+        <p>Encontré esta nota que recopila algunos de los mejores lugares para trabajar o estudiar en la ciudad. Vale la pena guardarla y recorrerlos.</p>
+        <div class="meta right">
+          <time datetime="2025-06-05">5 de junio de 2025</time>
+          <a href="articulo_5.html" class="leer-mas">Leer más →</a>
+        </div>
+      </article>
+
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Café y Apuntes – creado por Camila Lugones</p>
+  </footer>
+
+</body>
+</html>

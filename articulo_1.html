@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>La Noire Café – Café y Apuntes</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <button id="btn-volver-arriba" title="Volver arriba">↑</button>
+  <script>
+  const btnVolverArriba = document.getElementById("btn-volver-arriba");
+
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 300) {
+      btnVolverArriba.style.display = "block";
+    } else {
+      btnVolverArriba.style.display = "none";
+    }
+  });
+
+  btnVolverArriba.addEventListener("click", () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  });
+</script>
+
+  <header>
+    <h1>Café y Apuntes</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="articulos.html">Artículos</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+        <li><a href="https://clugo21.github.io/linktree/" target="_blank">Linktree</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="articulo-individual">
+  <div class="titulo-con-volver">
+    <a href="articulos.html" class="volver-sutil">← Volver</a>
+    <h2>La Noire Café</h2>
+  </div>
+
+  <div class="bloque-articulo">
+    <img src="imagenes/lanoire.jpg" alt="Interior de La Noire Café">
+
+    <p><a href="https://www.instagram.com/lanoirecafe/?hl=es" target="_blank"><strong>La Noire Café</strong></a> cuenta con dos sedes en los barrios de Colegiales y Chacarita.</p>
+
+    <p>Estaba buscando un lugar tranquilo para estudiar y lo encontré. Es un café con estética cuidada, luz suave, música instrumental de fondo, tranquilidad, un excelente café.</p>
+  
+    <blockquote class="cita-articulo">
+      “De la moderna máquina cafetera, al ritmo del jazz que se oye de fondo, salen sin parar espressos, macchiatos, cappuccinos y flat White… Sobre el mostrador están exhibidos diferentes dulces y pastelería artesanal” – <em>La Nación</em><br>
+      <a href="https://www.lanacion.com.ar/lifestyle/era-una-tapiceria-en-chacarita-un-cafe-atendido-por-una-obstetra-francesa-que-sirve-pasteleria-nid11082022/" target="_blank" class="link-nota">Leer nota completa</a>
+    </blockquote>
+
+    <p>Me gustó especialmente que las mesas están bien separadas entre sí, lo cual te permite trabajar en silencio sin sentirte observado. Tiene enchufes cerca y buen WiFi. Además, cuenta con un patio interno muy hermoso y tranquilo.</p>
+
+    <p>Volvería sin dudas. Recomendado para sesiones de estudio largas o lectura.</p>
+
+    <time datetime="2025-06-01" class="fecha-publicacion">Publicado el 1 de junio de 2025</time>
+  </div>
+
+  <div class="navegacion-articulos" style="justify-content: space-between;">
+    <span style="visibility: hidden;">placeholder</span>
+    <span class="numero-articulo">1</span>
+    <a href="articulo_2.html">Artículo siguiente →</a>
+  </div>
+</main>
+
+
+  <footer>
+    <p>&copy; 2025 Café y Apuntes – creado por Camila Lugones</p>
+  </footer>
+
+</body>
+</html>

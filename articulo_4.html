@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Playlist para estudiar – Café y Apuntes</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <button id="btn-volver-arriba" title="Volver arriba">↑</button>
+  <script>
+    const btnVolverArriba = document.getElementById("btn-volver-arriba");
+    window.addEventListener("scroll", () => {
+      btnVolverArriba.style.display = window.scrollY > 300 ? "block" : "none";
+    });
+    btnVolverArriba.addEventListener("click", () => {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+  </script>
+
+  <header>
+    <h1>Café y Apuntes</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="articulos.html">Artículos</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+        <li><a href="https://clugo21.github.io/linktree/" target="_blank">Linktree</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="articulo-individual">
+    <div class="titulo-con-volver">
+      <a href="articulos.html" class="volver-sutil">← Volver</a>
+      <h2>Playlist para estudiar</h2>
+    </div>
+
+    <div class="bloque-articulo">
+      <img src="imagenes/playlist.jpg" alt="Playlist de jazz para estudiar">
+
+      <p>A veces, cuando escucho música que me gusta mucho mientras estudio, termino cantando o revisando redes y me distraigo.</p>
+
+      <p>Por eso encontré esta <a href="https://open.spotify.com/playlist/4lFMHfo4EC2yAk30Rwz5U7" target="_blank">playlist</a> instrumental de jazz, que me ayuda a concentrarme sin distraerme. Es suave, sin letras, y acompaña sin interrumpir.</p>
+
+      <p>Ideal para esos momentos en los que necesitás foco total o simplemente un fondo tranquilo para tu espacio de trabajo.</p>
+
+      <p>Y si te interesa explorar más playlists que acompañen tus jornadas de estudio, te comparto este video para mantener la concentración. Es relajado, ideal para el momento de estudio:</p>
+
+      <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/ot5UsNymqgQ?si=C1LGW2ZeW2dKgvr2" title="YouTube video player" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+
+      <time datetime="2025-06-04" class="fecha-articulo">Publicado el 4 de junio de 2025</time>
+    </div>
+
+    <div class="navegacion-articulos">
+      <a href="articulo_3.html">← Artículo anterior</a>
+      <span style="font-size: 1rem; color: #5d4037; font-weight: bold;">4</span>
+      <a href="articulo_5.html">Artículo siguiente →</a>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Café y Apuntes – creado por Camila Lugones</p>
+  </footer>
+</body>
+</html>
